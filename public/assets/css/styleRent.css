@@ -1,0 +1,217 @@
+/* Rent paeg */
+.property .property-list{
+  display: inline-block;
+  width: 75%;
+  height: auto;
+}
+.property-card .card-banner{
+    height: 250px;
+    width: 100%;
+}
+.iconn {
+    margin-top: 5px;
+
+}
+
+.property .container .form{
+    position: absolute;
+    right: 0;
+    width: 38%;
+    padding: 8px 10px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid var(--alice-blue);
+}
+.header-bottom-bottom{
+    display: inline-block;
+}
+.property-list li{
+    border: 1px solid var(--alice-blue);
+    margin: 5px 2px;
+    padding: 2px 3px;
+
+}
+.property-list li .card-list{
+    padding: 2px;
+    margin: 3px;
+}
+
+.property .property-list .card-list li{
+    display: inline;
+    width: auto;
+}
+
+/*Rent Filter*/
+#header-bottom-bottom {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #00000006;
+  }
+.property-type-class option{
+    font-size: var(--fs-6);
+    line-height: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    padding: 0;
+   }
+   .property-type-class:hover{
+    color: var(--orange-soda);
+   }
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  .filter-group label{
+    padding: 8px 6px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .filter-group label:hover{
+    color: var(--orange-soda);
+  }
+  #property-type,
+  #bedrooms-select,
+  #bathrooms-select{
+    cursor: pointer;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .bedrooms-label,
+  .bathrooms-label{
+    padding: 8px ;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .bedrooms-label:hover,
+  .bathrooms-label:hover{
+    color: var(--orange-soda);
+  }
+
+.bedrooms-select-class option{
+    font-size: var(--fs-6);
+    line-height: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+  }
+
+  .bedrooms-select-class:hover{
+    color: var(--orange-soda);
+  }
+
+.bathrooms-select-class option{
+    font-size: var(--fs-6);
+    line-height: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.bathrooms-select-class:hover{
+    color: var(--orange-soda);
+  }
+  .find-btn{
+    border-radius: 10px;
+    background-color:var(--orange-soda);
+    cursor: pointer;
+    margin: 6px 5px;
+    padding: 8px 6px;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--white);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+
+  }
+  .find-btn:hover:is(:hover, :focus) { --orange-soda: hsl(7, 72%, 46%); }
+
+  .amenities-filter {
+    display: flex;
+    justify-content: center;
+    margin: 8px 6px;
+    padding: 8px 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer
+  }
+  .amenities-filter input{
+    cursor: pointer;
+  }
+  .amenities-filter label:hover{
+    color: var(--orange-soda);
+  }
+  .amenities-filter input[type="checkbox"] {
+    margin: 0 10px;
+  }
+  .min-price-label{
+
+    padding: 8px 6px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .min-price-label:hover{
+    color: var(--orange-soda);
+  }
+  .max-price-label{
+
+    padding: 8px 6px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .max-price-label:hover{
+    color: var(--orange-soda);
+  }
+  .min-price-select-class{
+    cursor: pointer;
+    padding: 8px 6px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .max-price-select-class{
+    cursor: pointer;
+    padding: 8px 6px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+
+  .selectfilter{
+    border:.1rem solid #333;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    padding:1rem;
+    text-transform: none;
+    border-radius: 10px;
+    width: 140px;
+position: absolute;
+left: 200px;
+
+}
+.filter{
+    display:flex;
+align-items: center;
+justify-content: center;
+margin-top: 50px;
+background: local;
+}
+.pfilter{
+    position: absolute;
+    right: 70px;
+}
+.filterb{
+    background: #00000006;
+}
+.label{
+    position: absolute;
+   left: 120px;
+}

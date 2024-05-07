@@ -1,0 +1,357 @@
+/* setting box */
+
+
+:root{
+    --dark-jungle-green: hsl(188, 63%, 7%);
+    --prussian-blue: hsl(200, 69%, 14%);
+    --raisin-black-1: hsl(227, 29%, 13%);
+    --raisin-black-2: hsl(229, 17%, 19%);
+    --yellow-green: hsl(89, 72%, 45%);
+    --orange-soda: hsl(9, 100%, 62%);
+    --cultured-1: hsl(0, 0%, 93%);
+    --cultured-2: hsl(192, 24%, 96%);
+    --misty-rose: hsl(7, 56%, 91%);
+    --alice-blue: hsl(210, 100%, 97%);
+    --seashell: hsl(8, 100%, 97%);
+    --cadet: hsl(200, 15%, 43%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --opal: hsl(180, 20%, 62%);
+
+}
+.setting-box{
+    position: fixed;
+    right: -250px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.034);
+    width: 250px;
+    z-index: 1000;
+    transition: .9s;
+    text-align: center;
+    font-weight: bold;
+}
+.open{
+    right: 0px;
+}
+.setting-box .toggle-setting{
+    position: absolute;
+    left: -30px;
+    top: 60px;
+    background-color: var(--orange-soda);
+    text-align: center;
+    cursor: pointer;
+}
+.setting-box .toggle-setting .material-symbols-outlined{
+    width: 30px;
+    padding: 8px 0;
+}
+.setting-box .toggle-setting:is(:hover, :focus) {
+    --orange-soda: hsl(7, 72%, 46%);
+   }
+.setting-box .option-box ul{
+    padding: 20px;
+    margin: 5px;
+}
+.setting-box .option-box ul li{
+    padding: 5px;
+    margin: 5px;
+}
+.setting-box .option-box ul li button{
+    padding: 10px;
+    color: white;
+    background-color: var(--orange-soda);
+    display: inline-block;
+    border-radius: 10px;
+}
+.setting-box .option-box ul li button:is(:hover, :focus) {
+    --orange-soda: hsl(7, 80%, 29%);
+   }
+
+/* end box */
+
+/*start aside */
+.aside-header{
+    text-align: center;
+}
+aside {
+        display: none;
+}
+aside.open {
+        display: block;
+}
+.dash{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.034);
+    padding: 5px;
+    margin: 5px;
+}
+.dash a{
+    color: #000000;
+}
+.dash a:hover{
+    color: var(--orange-soda);
+}
+.dash-content{
+    background-color: rgba(0, 0, 0, 0.034);
+    padding: 5px;
+    margin: 5px;
+}
+.Profile{
+    padding: 10px;
+    margin: 6px;
+    width: 80%;
+}
+.owner-image{
+    display: inline-block;
+    margin: 3px;
+    padding: 3px;
+}
+.owner-image img{
+    width: 120px;
+    height: 180px;
+}
+.owner-details{
+    display: inline-block;
+}
+.profile-information{
+    background-color: rgba(0, 0, 0, 0.034);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.change-prof-info{
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+
+}
+.change-prof-info label:hover{
+    color: var(--orange-soda);
+}
+.change-prof-info input{
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    height: 40px;
+    width: 300px;
+    font-size: medium;
+    border: #000000;
+}
+.change-prof-info button{
+    background: var(--orange-soda);
+    color: var(--white);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.change-prof-info button:is(:hover, :focus) {
+     --orange-soda: hsl(7, 72%, 46%);
+    }
+
+.address-det{
+    background-color: rgba(0, 0, 0, 0.034);
+    padding: 15px;
+    margin: 10px;
+
+}
+.my-prop-main{
+    background-color: rgba(0, 0, 0, 0.034);
+    padding: 5px;
+    margin: 5px;
+}
+.my-prop-main span{
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+.my-prop-main .my-prop-span{
+    margin-right: 430px;
+}
+.my-prop{
+    display: flex;
+}
+.property-image{
+    display: inline-block;
+    margin: 3px;
+    padding: 3px;
+
+}
+.property-image img{
+    width: 170px;
+    height: 150px;
+
+}
+.my-prop-main .date-act-del{
+    display: flex;
+}
+.my-prop-main .date-act-del button{
+    margin-left: 90px;
+    height: 122px;
+}
+.dd{ margin-left:80px;
+    padding: 5px;}
+.my-prop-main .date-act-del button:hover{
+color: var(--orange-soda);
+   }
+.my-prop-main .property-date{
+    margin-right: 100px;
+    display: inline-block;
+}
+
+.my-prop-main .prop-date-details{
+    margin-left: 180px;
+    margin-top: 50px;
+}
+.my-prop-main .prop-date-details2{
+    margin-left: 230px;
+    margin-top: 50px;
+}
+
+.property-details{
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    height: 150px;
+    width: 170px;
+
+}
+.date-act-del .delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 20px;
+    height: 30px;
+    margin: 40px 135px;
+    margin-right:-80px;
+  }
+  .date-act-del .delete-button2 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 20px;
+    height: 30px;
+    margin: 40px 105px;
+    margin-right: 0;
+  }
+
+
+
+  .delete-button .trash:hover{
+    color: var(--orange-soda);
+   }
+
+.pay{
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+}
+.pay label:hover{
+    color: var(--orange-soda);
+}
+.pay input{
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    height: 40px;
+    width: 300px;
+    font-size: medium;
+    border: #000000;
+}
+.pay button{
+    background: var(--orange-soda);
+    color: var(--white);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+.pay button:is(:hover, :focus) {
+    --orange-soda: hsl(7, 72%, 46%);
+   }
+.pay-coupon{
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.pay-coupon button{
+    background: var(--orange-soda);
+    color: var(--white);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+.pay-coupon h3{
+    display: inline-block;
+}
+.pay-coupon button:is(:hover, :focus) {
+    --orange-soda: hsl(7, 72%, 46%);
+   }
+.pay-method{
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+
+}
+.pay-method label{
+    padding-right: 100px;
+}
+.pay-method label:hover{
+    color: var(--orange-soda);
+}
+.change-pass{
+    background-color: rgba(0, 0, 0, 0.185);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.change-pass label:hover{
+    color: var(--orange-soda);
+}
+.change-pass button{
+    background: var(--orange-soda);
+    color: var(--white);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.change-pass button:is(:hover,:focus){
+    --orange-soda:hsl(7,72%,46%);
+}
+.change-pass input{
+    display: block;
+    align-items: center;
+    border-radius: 4px;
+    height: 40px;
+    width: 300px;
+    font-size: medium;
+    border: #000000;
+}
+.trash:hover{
+    color:var(--orange-soda) ;}
+.trash:hover{
+    color:var(--orange-soda) ;
+    margin-left: -50px;}
+
+
+
+
+/*end aside*/
